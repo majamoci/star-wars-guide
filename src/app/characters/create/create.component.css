@@ -1,0 +1,56 @@
+form{
+  background-color: var(--color-white);
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form h2{
+  font-size: 32px;
+  color: var(--color-orange);
+  font-weight: 700;
+}
+.inputs-container{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+ }
+.inputs-container > input{
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 2px solid var(--color-orange);
+}
+.inputs-container > select{
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 2px solid var(--color-orange);
+}
+.container-image{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+form button{
+  height: 40px;
+  border-radius: 5px;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: var(--color-black-100);
+}
+
+@media screen and (min-width: 768px){
+  .inputs-container{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

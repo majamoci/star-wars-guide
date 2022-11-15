@@ -1,0 +1,17 @@
+<header>
+  <h1>STAR WARS | GUIDE</h1>
+  <!-- <nav>
+      <a routerLink="/home" routerLinkActive="active">HOME</a>
+      >
+      <a routerLink="/characters"  routerLinkActive="active">{{titulo}}</a>
+      >
+      <a routerLink="/characters/character-detail"  routerLinkActive="active">{{subtitulo}}</a>
+
+  </nav> -->
+  <breadcrumb #parent>
+    <span class="breadcrumb" *ngFor="let route of parent.breadcrumbs">
+        <a mat-button *ngIf="!route.terminal" href="" [routerLink]="[route.url]">{{ route.displayName }}</a>
+        <a mat-button *ngIf="route.terminal">{{ route.displayName }}</a>
+    </span>
+</breadcrumb>
+</header>

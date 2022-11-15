@@ -1,0 +1,10 @@
+<section class="characters">
+  <a class="add-button" routerLink="/characters/create">
+      <img src="/assets/img/add.png" alt="">
+  </a>
+  <a class="character" *ngFor="let character of characters"   routerLink="/characters/character-detail">
+      <img src="/assets/img/option_1.jpg" alt="">
+      <h2>{{character.name}}</h2>
+  </a>
+
+</section>

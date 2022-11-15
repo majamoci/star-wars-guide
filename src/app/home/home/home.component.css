@@ -1,0 +1,33 @@
+.cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img{
+  border-radius: 20px;
+  height: 200px;
+  width: 300px;
+}
+.card h2{
+  position: absolute;
+  color: var(--color-white);
+  font-size: 36px;
+  font-weight: 700;
+  opacity: 0.9;
+  width: 300px;
+  text-align: center;
+}
+
+
+/* Responsive design*/
+@media screen and (min-width: 1024px){
+  .cards{
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
